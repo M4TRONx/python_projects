@@ -26,7 +26,7 @@ elif a==2:
 
     link = input("Enter Video Link To Convert Audio : ")
 
-    save_path = r"E:\All Youtube Audios"
+    save_path = str(os.path.join(Path.home(), "Downloads"))
 
     try:
         url= YouTube(link)
